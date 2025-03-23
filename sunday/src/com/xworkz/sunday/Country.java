@@ -4,6 +4,13 @@ public class Country {
     PrimeMinister primeMinister;
     String name="INDIA";
     State[] states;
+    public Country(){
+        System.out.println("Country details");
+    }
+    public Country(PrimeMinister primeMinister,State[] states){
+        this.states=states;
+        this.primeMinister=primeMinister;
+    }
 
 
     public void display(){
@@ -22,8 +29,9 @@ public class Country {
         Personnel personnel=new Personnel("Harsha",skill);
         Personnel[] personnels={personnel};
         Security security=new Security("high",personnels);
+
         State state=new State("Karnataka",districts,cities);
-        this.states= new State[]{state};
+        states= new State[]{state};
 
 
         Detail detail=new Detail("Budget Allocation", "Managing National Budget", 12, "Ongoing");
@@ -48,7 +56,8 @@ public class Country {
 
 
         String primeName="Modi";
-        this.primeMinister=new PrimeMinister(ministers,primeName);
+        primeMinister=new PrimeMinister(ministers,primeName);
+
         System.out.println(" country name:"+name);
         if(primeMinister!=null){
             primeMinister.displayPrimeMinister();
