@@ -11,6 +11,11 @@ public class Security {
 
     public void display() {
         System.out.println("Security Level: " + securityLevel);
-        for (Personnel person : personnel) person.display();
+        if (personnel!=null){
+            for (Personnel person : personnel){
+                person.display();
+            }
+        }
+        else System.out.println("personal is null");
     }
 }

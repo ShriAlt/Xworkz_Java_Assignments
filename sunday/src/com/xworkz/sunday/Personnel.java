@@ -11,6 +11,9 @@ public class Personnel {
 
     public void display() {
         System.out.println("Personnel Name: " + name);
-        skill.display();
+        if(skill!=null){
+            skill.display();
+        }
+       else System.out.println("skill is null");
     }
 }

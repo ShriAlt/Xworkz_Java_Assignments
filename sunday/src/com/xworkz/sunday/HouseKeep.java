@@ -9,6 +9,9 @@ public class HouseKeep {
     }
     public void display(){
         System.out.println("HouseKeeper Name: " + name);
-        transport.display();
+        if (transport!=null){
+            transport.display();
+        }else System.out.println("transport is null");
+
     }
 }

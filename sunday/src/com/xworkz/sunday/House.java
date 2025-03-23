@@ -11,11 +11,17 @@ public class House {
     }
     public void displayHouse(){
         System.out.println("Address"+address);
-        for (Room room:rooms){
-            room.display();
+        if (rooms!=null){
+            for (Room room:rooms){
+                room.display();
         }
-        for (HouseKeep houseKeep:houseKeeps){
-            houseKeep.display();
-        }
+
+        }else System.out.println("rooms is null");
+        if (houseKeeps!=null){
+            for (HouseKeep houseKeep:houseKeeps){
+                houseKeep.display();
+            }
+        }else System.out.println("house keep is null");
+
     }
 }

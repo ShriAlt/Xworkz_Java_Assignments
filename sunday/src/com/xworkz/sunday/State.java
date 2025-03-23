@@ -13,6 +13,9 @@ public class State {
 
     public void display() {
         System.out.println("State Name: " + stateName);
-        for (District district : districts) district.display();
+        if(districts!=null){
+            for (District district : districts) district.display();
+        }
+        else System.out.println("districts are null");
     }
 }

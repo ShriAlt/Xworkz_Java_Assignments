@@ -11,8 +11,10 @@ public class ExperienceDetail {
 
     public void display() {
         System.out.println("Company Name: " + companyName);
-        for (Education edu : education){
-            edu.display();
-        }
+        if(education!=null){
+            for (Education edu : education){
+                edu.display();
+            }
+        }else System.out.println("education is null");
     }
 }

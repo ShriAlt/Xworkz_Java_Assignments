@@ -10,7 +10,11 @@ public class District {
     }
 
     public void display() {
-        System.out.println("District Name: " + districtName);
-        for (Ward ward : wards) ward.display();
+        if (wards!=null){
+            System.out.println("District Name: " + districtName);
+            for (Ward ward : wards) ward.display();
+        }
+        else System.out.println("ward is null");
+
     }
 }

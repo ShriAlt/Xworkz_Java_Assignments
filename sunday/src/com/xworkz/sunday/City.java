@@ -10,7 +10,11 @@ public class City {
     }
 
     public void display() {
-        System.out.println("City Name: " + cityName);
-        for (Ward ward : wards) ward.display();
+        if(wards!=null){
+            System.out.println("City Name: " + cityName);
+            for (Ward ward : wards) ward.display();
+        }
+        else System.out.println("Ward is null");
+
     }
 }

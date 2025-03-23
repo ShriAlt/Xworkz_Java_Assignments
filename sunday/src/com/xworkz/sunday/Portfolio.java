@@ -12,9 +12,13 @@ public class Portfolio {
     }
     public void displayPortfolio(){
         System.out.println("Portfolio Title: " + title + ", Budget: " + budget);
-        for (Detail detail : details){
-            detail.detailsDisplay();
+        if (details!=null){
+            for (Detail detail : details){
+                detail.detailsDisplay();
+        }
+
     }
+        else System.err.println("details is null");
 
     }
 

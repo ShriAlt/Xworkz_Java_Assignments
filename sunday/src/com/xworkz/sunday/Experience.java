@@ -11,6 +11,12 @@ public class Experience {
 
     public void display() {
         System.out.println("Total Experience: " + totalYears + " years");
-        for (ExperienceDetail detail : experienceDetails) detail.display();
+        if(experienceDetails!=null){
+            for (ExperienceDetail detail : experienceDetails){
+                detail.display();
+            }
+        }
+        else System.out.println("experince is null");
+
     }
 }

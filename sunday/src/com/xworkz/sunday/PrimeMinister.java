@@ -9,10 +9,12 @@ public class PrimeMinister {
     }
     public void displayPrimeMinister(){
         System.out.println("Prime Minister Name: " + name);
-        for (Minister minister:ministers){
-            minister.displayMinister();
+        if (ministers!=null){
+            for (Minister minister:ministers){
+                minister.displayMinister();
+            }
         }
-
+        else System.out.println("minister is null");
     }
 
 

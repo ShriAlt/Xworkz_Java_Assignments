@@ -11,6 +11,9 @@ public class Skill {
 
     public void display() {
         System.out.println("Skill Name: " + skillName);
-        experience.display();
+        if (experience!=null){
+            experience.display();
+        }
+        else System.out.println("experience is null");
     }
 }
