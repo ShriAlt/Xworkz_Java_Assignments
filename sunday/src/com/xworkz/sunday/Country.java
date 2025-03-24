@@ -64,8 +64,8 @@ public class Country {
         }
         else System.out.println("primeminister is null");
         if(states!=null){
-            for (State s:states){
-                s.display();
+            for (State states:states){
+                state.display();
         }
         }else System.out.println("states is null");
 
