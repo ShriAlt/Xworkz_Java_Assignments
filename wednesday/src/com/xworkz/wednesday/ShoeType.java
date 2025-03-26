@@ -1,6 +1,6 @@
 package com.xworkz.wednesday;
 
-enum ShoeType {
+public enum ShoeType {
 
     HIGH_TOPS,FORMALS,SNEKERS
 }

@@ -19,7 +19,7 @@ public class Shoe {
         return type;
     }
 
-    public void setType(ShoeType type) {
+     void setType(ShoeType type) {
         this.type = type;
     }
 
