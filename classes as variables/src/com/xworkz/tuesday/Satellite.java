@@ -34,6 +34,7 @@ public class Satellite {
 
     public void showSatellite(){
         System.out.println("running in satellite");
+        //local veriable
         IdCard idCard1=new IdCard();
         Color color=new Color();
         idCard1.setDesignedBy("harsha");

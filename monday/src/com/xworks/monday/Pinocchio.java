@@ -1,5 +1,7 @@
 package com.xworks.monday;
 
+import com.xworks.monday.practice.Jail;
+
 public class Pinocchio {
     public String sword;
     int stat;
@@ -19,5 +21,4 @@ public class Pinocchio {
     void notLie(){
         System.out.println("default method :"+sword);
     }
-
 }
