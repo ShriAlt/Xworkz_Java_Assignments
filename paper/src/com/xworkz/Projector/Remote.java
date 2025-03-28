@@ -13,9 +13,9 @@ public class Remote {
         this.battery = battery;
     }
 
-    public Battery getBattery() {
-        return battery;
-    }
+//    public Battery getBattery() {
+//        return battery;
+//    }
     public void displayRemote(){
         if (battery!=null){
             System.out.println("name :"+this.remoteName);
