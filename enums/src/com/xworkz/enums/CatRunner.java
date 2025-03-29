@@ -4,6 +4,6 @@ public class CatRunner {
     public static void main(String[] args) {
         System.out.println();
         Cat cat=new Cat();
-        cat.displaycat();
+        cat.displaycat(CatType.BRITESH_FOLD);
     }
 }
