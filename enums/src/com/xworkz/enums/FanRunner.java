@@ -5,6 +5,9 @@ public class FanRunner  {
         Fan fan=new Fan();
         fan.run();
         fan.displaycat(CatType.BRITESH_FOLD);
+        for (CatType catType:CatType.values()){
+            System.out.println(catType);
+        }
 
     }
 
