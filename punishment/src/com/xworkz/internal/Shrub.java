@@ -1,7 +1,7 @@
 package com.xworkz.internal;
 
-public class Speaker extends ElectronicDevice{
-    public Speaker(){
+public class Shrub extends Plant{
+    public Shrub(){
         System.out.println("no args const");
     }
 }
