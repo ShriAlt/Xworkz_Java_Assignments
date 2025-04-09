@@ -1,89 +1,67 @@
 package com.xworkz.runner;
-import com.sun.java.accessibility.util.TopLevelWindowListener;
 import com.xworkz.external.*;
-import com.xworkz.external.Math;
+
 
 public class MainRunner {
     public static void main(String[] args) {
-        Nike nike=new Nike("Nike",7,67);
-        String nikeString=nike.toString();
-        System.out.println(nikeString);
-
         Persian persian=new Persian("whiskey",11,3);
         System.out.println(persian);
 
         Husky husky=new Husky("rony",7,5);
         System.out.println(husky);
-
-        Puma puma=new Puma("Puma",8,9);
-        System.out.println(puma);
-
-        Asian asian=new Asian("Asian",7,9);
-        System.out.println(asian);
-
-        Zyadan zyadan=new Zyadan("Zaydan",8,9);
-        System.out.println(zyadan);
-
-        AirJordan airJordan=new AirJordan("AirJordan",6,8);
-        System.out.println(airJordan);
-
         GoldenRetriver goldenRetriver=new GoldenRetriver("rocky",7,6);
         System.out.println(goldenRetriver);
 
+        Nike nike=new Nike("Nike",7,67);
+        String nikeString=nike.toString();
+        System.out.println(nikeString);
+        Puma puma=new Puma("Puma",8,9);
+        System.out.println(puma);
+        Asian asian=new Asian("Asian",7,9);
+        System.out.println(asian);
+        Zyadan zyadan=new Zyadan("Zaydan",8,9);
+        System.out.println(zyadan);
+        AirJordan airJordan=new AirJordan("AirJordan",6,8);
+        System.out.println(airJordan);
+
         Tiger tiger=new Tiger("Tiger","67","white");
         System.out.println(tiger);
-
         Cow cow=new Cow("cow","56","black");
         System.out.println(cow);
-
         Cat cat=new Cat("cat","56","orange");
         System.out.println(cat);
 
         Algea algea=new Algea("Algea","plant","water");
         System.out.println(algea);
-
         Bamboo bamboo=new Bamboo("bamboo","plant","earth");
         System.out.println(bamboo);
-
         Cactus cactus=new Cactus("Cactus","plant","dessert");
         System.out.println(cactus);
-
         Fern fern=new Fern("fern","plant","water");
         System.out.println(fern);
-
         Hearb hearb=new Hearb("hearb","plant","bush");
         System.out.println(hearb);
-
         Bush bush=new Bush("bush","plant","bush");
         System.out.println(bush);
-
-        Chisel chisel=new Chisel("chisEl","tool",7);
-        System.out.println(chisel);
-
-        Drill drill=new Drill("drill","tool",8);
-        System.out.println(drill);
-
         Moss moss=new Moss("moss","plant","water");
         System.out.println(moss);
-
         Shrub  shrub=new Shrub("shrub","plant","mud");
         System.out.println(shrub);
-
         Tree tree=new Tree("tree","plant" ,"ground");
         System.out.println(tree);
-
         Pine pine=new Pine("pine","plant","forest");
         System.out.println(pine);
-
         Vine vine=new Vine("vine","plant","forest");
         System.out.println(vine);
 
+        Chisel chisel=new Chisel("chisEl","tool",7);
+        System.out.println(chisel);
+        Drill drill=new Drill("drill","tool",8);
+        System.out.println(drill);
         Hammer hammer=new Hammer("hammer","tools",9);
         System.out.println(hammer);
-
         Nail nail=new Nail("nail","tool",100);
         System.out.println(nail);
-
         Pliers pliers=new Pliers("pliers","tool",9);
         System.out.println(pliers);
         Saw saw=new Saw("saw","tools",9);
@@ -97,8 +75,7 @@ public class MainRunner {
         System.out.println(level);
         PaintBrush paintBrush=new PaintBrush("pain brush","tool",8);
         System.out.println(paintBrush);
-
-        Math math=new Math("maths","A",78);
+        Maths math=new Maths("maths","A",78);
         System.out.println(math);
         Physics physics=new Physics("physics","B",67);
         System.out.println(physics);
@@ -140,12 +117,103 @@ public class MainRunner {
         Crypto crypto=new Crypto("crypto",67,24);
         System.out.println(crypto);
 
+        Electronics electronics=new Electronics("electronics",56,78);
+        System.out.println(electronics);
+        Clothing clothing = new Clothing("clothing",78,89);
+        System.out.println(clothing);
+        Grocery grocery=new Grocery("grocery",67,23);
+        System.out.println(grocery);
+        Furniture furniture=new Furniture("furniture",6,7);
+        Toys toys=new Toys("toys",8,8);
+        System.out.println(toys);
+        Books books=new Books("books",6,8);
+        System.out.println(books);
+        Beauty beauty=new Beauty("beauty",8,9);
+        System.out.println(beauty);
+        Sports sports=new Sports("sports",8,9);
+        System.out.println(sports);
+        Footwear footwear=new Footwear("footwear",8,9);
+        System.out.println(footwear);
+        Jewelry jewelry=new Jewelry("jewelry",8,9);
+        System.out.println(jewelry);
 
+        House house=new House("house",7,"manglore");
+        System.out.println(house);
+        Hospital hospital=new Hospital("hospital",7,"shivmoga");
+        System.out.println(hospital);
+        School school=new School("school",78,"banglore");
+        System.out.println(school);
+        Library library=new Library("library",4,"manglore");
+        System.out.println(library);
+        Hotel hotel=new Hotel("hotel",8,"mang");
+        System.out.println(hotel);
+        Office office=new Office("office",3,"banglore");
+        System.out.println(office);
+        Mall mall=new Mall("mall",7,"location");
+        System.out.println(mall);
+        Factory factory=new Factory("factory",7,"location");
+        System.out.println(factory);
+        Museum museum=new Museum("museum",8,"kerala");
+        System.out.println(museum);
+        SuperMarket superMarket=new SuperMarket("superMarket",6,"location");
+        System.out.println(superMarket);
 
+        Car car=new Car("red",8,76);
+        System.out.println(car);
+        Bike bike=new Bike("blue",4,7);
+        System.out.println(bike);
+        Truck truck=new Truck("blue",8,9);
+        System.out.println(truck);
+        Bus bus=new Bus("blue",5,24);
+        System.out.println(bus);
+        Scooter scooter=new Scooter("red",6,8);
+        System.out.println(scooter);
+        Train train=new Train("red",9,9);
+        System.out.println(train);
+        Airplane airplane=new Airplane("airplane",89,90);
+        System.out.println(airplane);
+        Ship ship=new Ship("red",9,8);
+        System.out.println(ship);
+        Tractor tractor=new Tractor("red",7,0);
+        System.out.println(tractor);
+        Ambulance ambulance=new Ambulance("white",8,9);
+        System.out.println(ambulance);
 
+        Phone phone=new Phone("phone",67,9);
+        System.out.println(phone);
+        Laptop laptop=new Laptop("laptop",67,9);
+        System.out.println(laptop);
+        TV tv=new TV("tv",89,9);
+        System.out.println(tv);
+        SmartWatch smartWatch=new SmartWatch("watch",78,9);
+        System.out.println(smartWatch);
+        Printer printer=new Printer("printer",89,9);
+        System.out.println(printer);
+        Monitor monitor=new Monitor("monitor",9,8);
+        System.out.println(monitor);
+        Speaker speaker=new Speaker("speaker",8,2);
+        System.out.println(speaker);
+        Console console=new Console("console",8,3);
+        System.out.println(console);
+        Tablet tablet=new Tablet("tablet",7,9);
+        System.out.println(tablet);
+        Router router=new Router("router",8,8);
+        System.out.println(router);
 
-
-
+        TwistedLove twistedLove=new TwistedLove("twisted love","smut",10);
+        System.out.println(twistedLove);
+        TwistedHate twistedHate=new TwistedHate("twisted hate","smut",10);
+        System.out.println(twistedHate);
+        TwistedLie twistedLie=new TwistedLie("twisted love","smut",10);
+        System.out.println(twistedLie);
+        TwistedGame twistedGame=new TwistedGame("twisted lie","smut",10);
+        System.out.println(twistedGame);
+        IgniteMe igniteMe=new IgniteMe("ignite me","fantasy",9);
+        System.out.println(igniteMe);
+        ShatterMe shatterMe=new ShatterMe("Shatter me","fantasy",10);
+        System.out.println(shatterMe);
+        YourName yourName=new YourName("your name","fantasy",10);
+        System.out.println(yourName);
 
     }
 }

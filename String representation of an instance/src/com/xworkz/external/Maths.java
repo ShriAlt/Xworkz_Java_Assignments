@@ -2,11 +2,11 @@ package com.xworkz.external;
 
 import com.xworkz.internal.Subject;
 
-public class Math extends Subject {
+public class Maths extends Subject {
     private int score;
     private String name;
     private String grade;
-    public Math(String name,String grade,int score){
+    public Maths(String name, String grade, int score){
         this.name=name;
         this.grade=grade;
         this.score=score;
@@ -14,7 +14,7 @@ public class Math extends Subject {
 
     @Override
     public String toString() {
-        return "Math{" +
+        return "Maths{" +
                 "score=" + score +
                 ", name='" + name + '\'' +
                 ", grade='" + grade + '\'' +
