@@ -20,4 +20,9 @@ public class Husky extends Dog {
                 ", hight=" + hight +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 1585;
+    }
 }

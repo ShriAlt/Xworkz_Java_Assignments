@@ -20,4 +20,9 @@ public class Psychology extends Subject {
                 ", grade='" + grade + '\'' +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 741259;
+    }
 }

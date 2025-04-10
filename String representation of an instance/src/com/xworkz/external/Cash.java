@@ -20,4 +20,9 @@ public class Cash extends PaymentMethods {
                 ", date=" + date +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 785;
+    }
 }

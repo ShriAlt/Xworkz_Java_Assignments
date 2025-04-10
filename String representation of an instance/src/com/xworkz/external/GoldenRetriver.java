@@ -20,4 +20,9 @@ public class GoldenRetriver extends Dog {
                 ", hight=" + hight +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 21552;
+    }
 }

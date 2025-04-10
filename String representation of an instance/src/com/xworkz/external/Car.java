@@ -20,4 +20,9 @@ public class Car extends Vehical {
                 ", price=" + price +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 651951;
+    }
 }

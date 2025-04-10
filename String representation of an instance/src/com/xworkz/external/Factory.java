@@ -19,5 +19,9 @@ public class Factory extends Building {
                 ", noOfRooms=" + noOfRooms +
                 ", location='" + location + '\'' +
                 '}';
+    }@Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 96385;
     }
 }

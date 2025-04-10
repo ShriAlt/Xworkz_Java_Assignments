@@ -21,4 +21,9 @@ public class Tape extends Tools {
                 ", type='" + type + '\'' +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 36984;
+    }
 }

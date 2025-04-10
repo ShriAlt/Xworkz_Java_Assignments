@@ -20,4 +20,9 @@ public class Level extends Tools {
                 ", type='" + type + '\'' +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 248996;
+    }
 }

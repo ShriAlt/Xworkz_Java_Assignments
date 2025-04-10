@@ -19,5 +19,10 @@ public class Pliers extends Tools {
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 '}';
+    }@Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 458796;
     }
+
 }

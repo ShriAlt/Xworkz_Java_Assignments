@@ -19,4 +19,9 @@ public class Nike extends Brand {
     public String toString() {
         return "Brand name:"+this.branName+" Ratings" +this.ratings+"Value"+this.value;
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 74589;
+    }
 }

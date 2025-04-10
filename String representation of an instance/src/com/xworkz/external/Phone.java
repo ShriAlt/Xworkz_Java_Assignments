@@ -21,4 +21,9 @@ public class Phone extends ElectronicDevice {
                 ", quantity=" + quantity +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 12549;
+    }
 }

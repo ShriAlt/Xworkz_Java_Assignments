@@ -22,4 +22,9 @@ public class Zyadan extends Brand {
                 ", value=" + value +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 789631;
+    }
 }

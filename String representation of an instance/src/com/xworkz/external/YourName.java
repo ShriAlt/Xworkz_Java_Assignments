@@ -20,4 +20,9 @@ public class YourName extends Book {
                 ", ratings=" + ratings +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 44586;
+    }
 }

@@ -21,4 +21,9 @@ public class Toys extends ProductCategory {
                 ", expireDate=" + expireDate +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 1548;
+    }
 }

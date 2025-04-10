@@ -20,4 +20,9 @@ public class Persian extends Cat {
                 ", weight=" + weight +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 145896;
+    }
 }

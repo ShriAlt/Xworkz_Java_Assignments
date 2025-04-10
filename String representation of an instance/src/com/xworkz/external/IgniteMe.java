@@ -20,4 +20,9 @@ public class IgniteMe extends Book {
                 ", ratings=" + ratings +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 8752;
+    }
 }

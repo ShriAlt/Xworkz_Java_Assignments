@@ -20,4 +20,9 @@ public class Tractor extends Vehical {
                 ", price=" + price +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 125648;
+    }
 }

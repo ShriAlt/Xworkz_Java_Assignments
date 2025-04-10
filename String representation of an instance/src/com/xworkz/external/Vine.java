@@ -20,4 +20,9 @@ public class Vine extends Plant {
                 ", location='" + location + '\'' +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 12548;
+    }
 }

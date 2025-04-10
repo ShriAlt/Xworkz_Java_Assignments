@@ -20,4 +20,9 @@ public class TwistedHate extends Book {
                 ", ratings=" + ratings +
                 '}';
     }
+    @Override
+    public int hashCode() {
+        System.out.println(" code :"+super.hashCode());
+        return 14258;
+    }
 }
