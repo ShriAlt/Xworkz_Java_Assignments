@@ -317,5 +317,18 @@ public class MainRunner {
         System.out.println(yourName);
         System.out.println(yourName.hashCode());
 
+
+
+
+        Tshirt tshirt1=new Tshirt();
+        tshirt1.setBrand("nike");
+        tshirt1.setSize(42);
+        tshirt1.setPrice(300);
+
+        Tshirt tshirt2=new Tshirt();
+        tshirt2.setBrand("xworkz");
+        tshirt2.setSize(42);
+        tshirt2.setPrice(300);
+
     }
 }
