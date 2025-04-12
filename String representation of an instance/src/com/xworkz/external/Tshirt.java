@@ -31,27 +31,27 @@ public class Tshirt {
         this.brand = brand;
     }
 
+
+
 //    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+        public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Tshirt){
+                Tshirt tshirt1=this;
+                Tshirt tshirt2=(Tshirt) obj;
+                if (tshirt1.size==tshirt2.size && tshirt1.price==tshirt2.price){
+
+                    return true;
+
+                }
+            }
+        }
+        return false;
     }
-
-    ////    public boolean equals(Object obj) {
-////        if (obj!=null){
-////            if (obj instanceof Tshirt){
-////                Tshirt tshirt1=this;
-////                Tshirt tshirt2=(Tshirt) obj;
-////                if (tshirt1.size==tshirt2.size && tshirt1.price==tshirt2.price){
-////
-////                    return true;
-////
-////                }
-////            }
-////        }
-////        return false;
-////    }
 
 
 
