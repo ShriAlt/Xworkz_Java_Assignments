@@ -26,9 +26,13 @@ public class MainRunner {
         System.out.println(asian);
         System.out.println(asian.hashCode());
         Zyadan zyadan=new Zyadan("Zaydan",8,9);
+        Zyadan zyadan1=new Zyadan("zyadan",8,9);
+        System.out.println("both are same :"+zyadan.equals(zyadan));
         System.out.println(zyadan);
         System.out.println(zyadan.hashCode());
         AirJordan airJordan=new AirJordan("AirJordan",6,8);
+        AirJordan airJordan1=new AirJordan("airjordan",56,89);
+        System.out.println("same :"+airJordan1.equals(airJordan));
         System.out.println(airJordan);
         System.out.println(airJordan.hashCode());
 

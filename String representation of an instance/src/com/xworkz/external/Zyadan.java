@@ -27,4 +27,18 @@ public class Zyadan extends Brand {
         System.out.println(" code :"+super.hashCode());
         return 789631;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null){
+            if (obj instanceof Zyadan){
+                Zyadan zyadan=this;
+                Zyadan zyadan1=(Zyadan) obj;
+                if (zyadan1.branName.equals(zyadan.branName) && zyadan1.value==zyadan.value && zyadan.ratings==zyadan1.ratings){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

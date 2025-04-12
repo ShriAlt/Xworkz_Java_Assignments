@@ -33,10 +33,6 @@ public class Tshirt {
 
 
 
-//    @Override
-//    public boolean equals(Object obj) {
-//        return super.equals(obj);
-//    }
 
         public boolean equals(Object obj) {
         if (obj!=null){
