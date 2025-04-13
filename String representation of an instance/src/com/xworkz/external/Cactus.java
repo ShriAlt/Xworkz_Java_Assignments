@@ -25,4 +25,17 @@ public class Cactus extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 46185;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Cactus){
+                Cactus cactus=this;
+                Cactus cactus1=(Cactus) obj;
+                if (cactus1.location.equals(cactus.location) && cactus1.type.equals(cactus.type) && cactus1.name.equals(cactus.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

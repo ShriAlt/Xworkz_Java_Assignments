@@ -25,4 +25,17 @@ public class Hammer extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 5852;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Hammer){
+                Hammer hammer=this;
+                Hammer hammer1=(Hammer) obj;
+                if (hammer1.name.equals(hammer.name) && hammer1.type.equals(hammer.type) && hammer1.quantity==hammer.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

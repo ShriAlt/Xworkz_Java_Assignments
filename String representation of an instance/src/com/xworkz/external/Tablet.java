@@ -1,6 +1,7 @@
 package com.xworkz.external;
 
 import com.xworkz.internal.ElectronicDevice;
+import javafx.scene.control.Tab;
 
 public class Tablet extends ElectronicDevice {
     private String name;
@@ -25,5 +26,18 @@ public class Tablet extends ElectronicDevice {
     public int hashCode() {
         System.out.println(" code :"+super.hashCode());
         return 15987;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Tablet){
+                Tablet tablet=this;
+                Tablet tablet1=(Tablet) obj;
+                if (tablet1.name.equals(tablet.name) && tablet1.quantity==tablet.quantity && tablet1.price==tablet.price){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

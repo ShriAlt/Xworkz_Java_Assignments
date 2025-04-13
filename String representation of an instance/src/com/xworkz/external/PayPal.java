@@ -25,4 +25,18 @@ public class PayPal extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 7416;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof PayPal){
+                PayPal payPal=this;
+                PayPal payPal1=(PayPal) obj;
+                if (payPal1.name.equals(payPal.name) && payPal1.cardNo==payPal.cardNo && payPal1.date==payPal.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

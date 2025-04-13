@@ -25,4 +25,17 @@ public class ShatterMe extends Book {
         System.out.println(" code :"+super.hashCode());
         return 145932;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof ShatterMe){
+                ShatterMe shatterMe=this;
+                ShatterMe shatterMe1=(ShatterMe) obj;
+                if (shatterMe1.name.equals(shatterMe.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

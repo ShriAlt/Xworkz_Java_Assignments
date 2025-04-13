@@ -25,4 +25,17 @@ public class PaintBrush extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 124586;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof PaintBrush){
+                PaintBrush paintBrush=this;
+                PaintBrush paintBrush1=(PaintBrush) obj;
+                if (paintBrush1.name.equals(paintBrush.name) && paintBrush1.type.equals(paintBrush.type) && paintBrush1.quantity==paintBrush.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

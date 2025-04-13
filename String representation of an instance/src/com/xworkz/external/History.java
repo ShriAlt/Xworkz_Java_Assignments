@@ -25,4 +25,18 @@ public class History extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 74185;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof History){
+                History history=this;
+                History history1=(History) obj;
+                if (history1.name.equals(history.name) && history1.grade.equals(history.grade) && history1.score==history.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

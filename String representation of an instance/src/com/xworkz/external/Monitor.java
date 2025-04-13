@@ -26,4 +26,17 @@ public class Monitor extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 45698;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Monitor){
+                Monitor monitor=this;
+                Monitor monitor1=(Monitor) obj;
+                if (monitor1.name.equals(monitor.name) && monitor1.quantity==monitor.quantity && monitor1.price==monitor.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

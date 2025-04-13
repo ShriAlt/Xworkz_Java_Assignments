@@ -25,4 +25,17 @@ public class Level extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 248996;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Chisel){
+                Level level=this;
+                Level level1=(Level) obj;
+                if (level1.name.equals(level.name) && level1.type.equals(level.type) && level1.quantity==level.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

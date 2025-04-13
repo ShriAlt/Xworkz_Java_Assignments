@@ -26,4 +26,17 @@ public class TV extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 145785;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof TV){
+                TV tv=this;
+                TV tv1=(TV) obj;
+                if (tv1.name.equals(tv.name) && tv1.quantity==tv.quantity && tv1.price==tv.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

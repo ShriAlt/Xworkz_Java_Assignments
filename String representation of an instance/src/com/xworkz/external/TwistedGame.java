@@ -25,4 +25,17 @@ public class TwistedGame extends Book {
         System.out.println(" code :"+super.hashCode());
         return 45896;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof TwistedGame){
+                TwistedGame twistedGame=this;
+                TwistedGame twistedGame1=(TwistedGame) obj;
+                if (twistedGame1.name.equals(twistedGame.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

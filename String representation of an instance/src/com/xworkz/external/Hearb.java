@@ -25,4 +25,17 @@ public class Hearb extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 25425;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Hearb){
+                Hearb hearb=this;
+                Hearb hearb1=(Hearb) obj;
+                if (hearb1.location.equals(hearb.location) && hearb1.type.equals(hearb.type) && hearb1.name.equals(hearb.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

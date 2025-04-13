@@ -25,4 +25,17 @@ public class School extends Building {
         System.out.println(" code :"+super.hashCode());
         return 24585;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof School){
+                School school=this;
+                School school1=(School) obj;
+                if (school1.name.equals(school.name) && school1.location.equals(school.location) && school1.noOfRooms==school.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

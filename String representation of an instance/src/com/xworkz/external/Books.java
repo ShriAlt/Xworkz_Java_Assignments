@@ -26,4 +26,18 @@ public class Books extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 849;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Books){
+                Books books=this;
+                Books books1=(Books) obj;
+                if (books1.name.equals(books.name) && books1.expireDate==books.expireDate && books1.quantity==books.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

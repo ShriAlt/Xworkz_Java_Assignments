@@ -25,4 +25,17 @@ public class Nail extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 741259;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Nail){
+                Nail nail=this;
+                Nail nail1=(Nail) obj;
+                if (nail1.name.equals(nail.name) && nail1.type.equals(nail.type) && nail1.quantity==nail.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

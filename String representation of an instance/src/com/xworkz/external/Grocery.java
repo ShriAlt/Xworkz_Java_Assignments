@@ -26,4 +26,18 @@ public class Grocery extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 1254;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Grocery){
+                Grocery grocery=this;
+                Grocery grocery1=(Grocery) obj;
+                if (grocery1.name.equals(grocery.name) && grocery1.expireDate==grocery.expireDate && grocery1.quantity==grocery.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

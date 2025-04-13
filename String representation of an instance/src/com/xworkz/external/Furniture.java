@@ -26,4 +26,18 @@ public class Furniture extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 211654;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Furniture){
+                Furniture furniture=this;
+                Furniture furniture1=(Furniture) obj;
+                if (furniture1.name.equals(furniture.name) && furniture1.expireDate==furniture.expireDate && furniture1.quantity==furniture.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

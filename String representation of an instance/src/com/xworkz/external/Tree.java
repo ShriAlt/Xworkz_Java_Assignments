@@ -25,4 +25,17 @@ public class Tree extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 14759;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Tree){
+                Tree tree=this;
+                Tree tree1=(Tree) obj;
+                if (tree1.location.equals(tree.location) && tree1.type.equals(tree.type) && tree1.name.equals(tree.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

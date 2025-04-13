@@ -27,4 +27,17 @@ public class ScrewDriver extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 47585;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof ScrewDriver){
+                ScrewDriver screwDriver=this;
+                ScrewDriver screwDriver1=(ScrewDriver) obj;
+                if (screwDriver1.name.equals(screwDriver.name) && screwDriver1.type.equals(screwDriver.type) && screwDriver1.quantity==screwDriver.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

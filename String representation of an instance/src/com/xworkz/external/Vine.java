@@ -25,4 +25,17 @@ public class Vine extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 12548;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Vine){
+                Vine vine=this;
+                Vine vine1=(Vine) obj;
+                if (vine1.location.equals(vine.location) && vine1.type.equals(vine.type) && vine1.name.equals(vine.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

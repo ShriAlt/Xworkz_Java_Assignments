@@ -25,4 +25,5 @@ public class SuperMarket extends Building {
         System.out.println(" code :"+super.hashCode());
         return 123658;
     }
+
 }

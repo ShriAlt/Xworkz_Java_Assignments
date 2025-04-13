@@ -25,4 +25,18 @@ public class GooglePay extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 2156;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof GooglePay){
+                GooglePay googlePay=this;
+                GooglePay googlePay1=(GooglePay) obj;
+                if (googlePay.name.equals(googlePay1.name) && googlePay1.cardNo==googlePay.cardNo && googlePay1.date==googlePay.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

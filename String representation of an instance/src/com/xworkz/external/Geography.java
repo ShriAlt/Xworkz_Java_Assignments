@@ -25,4 +25,18 @@ public class Geography extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 41852;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Geography){
+                Geography geography=this;
+                Geography geography1=(Geography) obj;
+                if (geography1.name.equals(geography.name) && geography1.grade.equals(geography.grade) && geography1.score==geography.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

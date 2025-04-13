@@ -26,4 +26,17 @@ public class Clothing extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 794613;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Clothing){
+                Clothing clothing=this;
+                Clothing clothing1=(Clothing) obj;
+                if (clothing1.name.equals(clothing.name) && clothing1.expireDate==clothing.expireDate && clothing1.quantity==clothing.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

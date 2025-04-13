@@ -25,4 +25,18 @@ public class Maths extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 54815;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Maths){
+                Maths maths=this;
+                Maths maths1=(Maths) obj;
+                if (maths1.name.equals(maths.name) && maths1.grade.equals(maths.grade) && maths1.score==maths.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

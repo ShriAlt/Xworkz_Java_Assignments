@@ -25,4 +25,17 @@ public class Fern extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 74185;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Fern){
+                Fern fern=this;
+                Fern fern1=(Fern) obj;
+                if (fern1.location.equals(fern.location) && fern1.type.equals(fern.type) && fern1.name.equals(fern.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

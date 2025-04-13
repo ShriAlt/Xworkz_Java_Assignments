@@ -25,4 +25,18 @@ public class Cash extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 785;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Cash){
+                Cash cash=this;
+                Cash cash1=(Cash) obj;
+                if (cash1.name.equals(cash.name) && cash1.cardNo==cash.cardNo && cash1.date==cash.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -25,5 +25,18 @@ public class Physics extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 12549;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Physics){
+                Physics physics=this;
+                Physics physics1=(Physics) obj;
+                if (physics1.name.equals(physics.name) && physics1.grade.equals(physics.grade) && physics1.score==physics.score){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
 

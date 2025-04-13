@@ -24,4 +24,17 @@ public class Factory extends Building {
         System.out.println(" code :"+super.hashCode());
         return 96385;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Factory){
+                Factory factory=this;
+                Factory factory1=(Factory) obj;
+                if (factory1.name.equals(factory.name) && factory1.location.equals(factory.location) && factory1.noOfRooms==factory.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

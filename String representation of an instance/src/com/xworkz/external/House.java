@@ -25,4 +25,17 @@ public class House extends Building {
         System.out.println(" code :"+super.hashCode());
         return 54812;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof House){
+                House house=this;
+                House house1=(House) obj;
+                if (house1.name.equals(house.name) && house1.location.equals(house.location) && house1.noOfRooms==house.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

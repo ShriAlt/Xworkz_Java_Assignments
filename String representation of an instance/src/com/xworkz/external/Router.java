@@ -26,4 +26,17 @@ public class Router extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 21458;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Router){
+                Router router=this;
+                Router router1=(Router) obj;
+                if (router1.name.equals(router.name) && router1.quantity==router.quantity && router1.price==router.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

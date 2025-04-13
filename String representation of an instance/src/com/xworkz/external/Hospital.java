@@ -25,4 +25,17 @@ public class Hospital extends Building {
         System.out.println(" code :"+super.hashCode());
         return 12256;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Hospital){
+                Hospital hospital=this;
+                Hospital hospital1=(Hospital) obj;
+                if (hospital1.name.equals(hospital.name) && hospital1.location.equals(hospital.location) && hospital1.noOfRooms==hospital.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

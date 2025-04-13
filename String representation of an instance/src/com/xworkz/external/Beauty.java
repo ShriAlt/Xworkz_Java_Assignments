@@ -26,4 +26,18 @@ public class Beauty extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 10890;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Beauty){
+                Beauty beauty=this;
+                Beauty beauty1=(Beauty) obj;
+                if (beauty1.name.equals(beauty.name) && beauty1.expireDate==beauty.expireDate && beauty1.quantity==beauty.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,17 @@ public class TwistedLie extends Book {
         System.out.println(" code :"+super.hashCode());
         return 3259;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof TwistedLie){
+                TwistedLie twistedLie=this;
+                TwistedLie twistedLie1=(TwistedLie) obj;
+                if (twistedLie1.name.equals(twistedLie.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -26,4 +26,17 @@ public class Speaker extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 21458;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Speaker){
+                Speaker speaker=this;
+                Speaker speaker1=(Speaker) obj;
+                if (speaker1.name.equals(speaker.name) && speaker1.quantity==speaker.quantity && speaker1.price==speaker.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

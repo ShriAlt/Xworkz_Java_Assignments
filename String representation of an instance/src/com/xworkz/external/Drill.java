@@ -25,4 +25,17 @@ public class Drill extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 85274;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Drill){
+                Drill drill=this;
+                Drill drill1=(Drill) obj;
+                if (drill1.name.equals(drill.name) && drill1.type.equals(drill.type) && drill1.quantity==drill.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -26,4 +26,17 @@ public class Laptop extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 12548;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Laptop){
+                Laptop laptop=this;
+                Laptop laptop1=(Laptop) obj;
+                if (laptop1.name.equals(laptop.name) && laptop1.quantity==laptop.quantity && laptop1.price==laptop.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

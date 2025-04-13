@@ -25,4 +25,18 @@ public class DebitCard extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 963;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof DebitCard){
+                DebitCard debitCard=this;
+                DebitCard debitCard1=(DebitCard) obj;
+                if (debitCard1.name.equals(debitCard.name) && debitCard1.cardNo==debitCard.cardNo && debitCard.date==debitCard1.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

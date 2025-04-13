@@ -25,4 +25,17 @@ public class Office extends Building {
         System.out.println(" code :"+super.hashCode());
         return 46963;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Office){
+                Office office=this;
+                Office office1=(Office) obj;
+                if (office1.name.equals(office.name) && office1.location.equals(office.location) && office.noOfRooms==office1.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

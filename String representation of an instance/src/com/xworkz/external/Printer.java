@@ -26,4 +26,17 @@ public class Printer extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 12459;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Printer){
+                Printer printer=this;
+                Printer printer1=(Printer) obj;
+                if (printer1.name.equals(printer.name) && printer1.quantity==printer.quantity && printer1.price==printer.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

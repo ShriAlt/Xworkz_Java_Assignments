@@ -25,4 +25,18 @@ public class Economics extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 74163;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Economics){
+                Economics economics=this;
+                Economics economics1=(Economics) obj;
+                if (economics1.name.equals(economics.name) && economics1.grade.equals(economics.grade) && economics1.score==economics.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -26,4 +26,17 @@ public class Console extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 794613;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Console){
+                Console console=this;
+                Console console1=(Console) obj;
+                if (console1.name.equals(console.name) && console1.quantity==console.quantity && console1.price==console.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

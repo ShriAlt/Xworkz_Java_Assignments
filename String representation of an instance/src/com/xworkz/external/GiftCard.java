@@ -25,4 +25,18 @@ public class GiftCard extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 74152;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof GiftCard){
+                GiftCard giftCard=this;
+                GiftCard giftCard1=(GiftCard) obj;
+                if (giftCard1.name.equals(giftCard.name) && giftCard1.cardNo==giftCard.cardNo && giftCard1.date==giftCard.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,17 @@ public class Mall extends Building {
         System.out.println(" code :"+super.hashCode());
         return 12458;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Mall){
+                Mall mall=this;
+                Mall mall1=(Mall) obj;
+                if (mall1.name.equals(mall.name) && mall1.location.equals(mall.location) && mall1.noOfRooms==mall.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

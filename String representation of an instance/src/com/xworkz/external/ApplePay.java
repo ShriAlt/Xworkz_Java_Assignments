@@ -25,4 +25,19 @@ public class ApplePay extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 96;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof ApplePay){
+                ApplePay applePay=this;
+                ApplePay applePay1=(ApplePay) obj;
+                if (applePay1.name.equals(applePay.name) && applePay1.cardNo==applePay.cardNo && applePay1.date==applePay.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

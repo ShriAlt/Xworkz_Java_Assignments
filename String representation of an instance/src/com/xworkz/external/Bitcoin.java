@@ -25,4 +25,18 @@ public class Bitcoin extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 448;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Bitcoin){
+                Bitcoin bitcoin=this;
+                Bitcoin bitcoin1=(Bitcoin) obj;
+                if (bitcoin1.name.equals(bitcoin.name) && bitcoin1.cardNo==bitcoin.cardNo && bitcoin1.date==bitcoin.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

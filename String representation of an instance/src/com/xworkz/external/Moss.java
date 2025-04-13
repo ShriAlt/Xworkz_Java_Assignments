@@ -25,4 +25,17 @@ public class Moss extends Plant {
         System.out.println(" code :"+super.hashCode());
         return 12324;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            if (obj instanceof Moss){
+                Moss moss=this;
+                Moss moss1=(Moss) obj;
+                if (moss.location.equals(moss1.location) && moss1.type.equals(moss.type) && moss1.name.equals(moss.name)){
+                    return  true;
+                }
+            }
+        }
+        return false;
+    }
 }

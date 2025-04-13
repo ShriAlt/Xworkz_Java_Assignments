@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Class_as_a_Parameters/Class_as_a_Parameters.iml" filepath="$PROJECT_DIR$/Class_as_a_Parameters/Class_as_a_Parameters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rcb/Rcb.iml" filepath="$PROJECT_DIR$/Rcb/Rcb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Xworkz_Java_Assignments.iml" filepath="$PROJECT_DIR$/.idea/Xworkz_Java_Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class as instance/class as instance.iml" filepath="$PROJECT_DIR$/class as instance/class as instance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classes as variables/classes as variables.iml" filepath="$PROJECT_DIR$/classes as variables/classes as variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enums/enums.iml" filepath="$PROJECT_DIR$/enums/enums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monday/monday.iml" filepath="$PROJECT_DIR$/monday/monday.iml" />
+      <module fileurl="file://$PROJECT_DIR$/night/night.iml" filepath="$PROJECT_DIR$/night/night.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paper/paper.iml" filepath="$PROJECT_DIR$/paper/paper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice/practice.iml" filepath="$PROJECT_DIR$/practice/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/punishment/punishment.iml" filepath="$PROJECT_DIR$/punishment/punishment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sagar/sagar.iml" filepath="$PROJECT_DIR$/sagar/sagar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunday/sunday.iml" filepath="$PROJECT_DIR$/sunday/sunday.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wednesday/wednesday.iml" filepath="$PROJECT_DIR$/wednesday/wednesday.iml" />
+    </modules>
+  </component>
+</project>

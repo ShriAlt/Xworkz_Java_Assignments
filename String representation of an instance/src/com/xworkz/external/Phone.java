@@ -26,4 +26,17 @@ public class Phone extends ElectronicDevice {
         System.out.println(" code :"+super.hashCode());
         return 12549;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Phone){
+                Phone phone=this;
+                Phone phone1=(Phone) obj;
+                if (phone1.name.equals(phone.name) && phone1.quantity==phone.quantity && phone1.price==phone.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

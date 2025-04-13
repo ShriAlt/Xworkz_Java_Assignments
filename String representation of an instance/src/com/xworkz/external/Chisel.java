@@ -25,4 +25,18 @@ public class Chisel extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 784512;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Chisel){
+                Chisel chisel=this;
+                Chisel chisel1=(Chisel) obj;
+                if (chisel1.name.equals(chisel.name) && chisel1.type.equals(chisel.type) && chisel1.quantity==chisel.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

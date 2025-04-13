@@ -2,6 +2,8 @@ package com.xworkz.external;
 
 import com.xworkz.internal.Vehical;
 
+import java.util.Objects;
+
 public class Bike extends Vehical {
     private String color;
     private int wheels;
@@ -24,5 +26,20 @@ public class Bike extends Vehical {
     public int hashCode() {
         System.out.println(" code :"+super.hashCode());
         return 997;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj !=null){
+            System.out.println("not null");
+            if (obj instanceof Bike){
+                System.out.println("is instance of Air jordan");
+                Bike bike =this;
+                Bike bike1=(Bike) obj;
+                if (Objects.equals(bike.color, bike1.color) && bike1.price==bike.price){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

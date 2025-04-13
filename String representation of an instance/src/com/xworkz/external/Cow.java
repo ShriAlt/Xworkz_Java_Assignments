@@ -25,4 +25,17 @@ public class Cow extends Animal {
         System.out.println(" code :"+super.hashCode());
         return 794613;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Cow){
+                Cow cow=this;
+                Cow cow1=(Cow) obj;
+                if (cow1.name.equals(cow.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,18 @@ public class BankTransfer extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 346;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof BankTransfer){
+                BankTransfer bankTransfer=this;
+                BankTransfer bankTransfer1=(BankTransfer) obj;
+                if (bankTransfer1.name.equals(bankTransfer.name) && bankTransfer.cardNo==bankTransfer1.cardNo && bankTransfer1.date==bankTransfer.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

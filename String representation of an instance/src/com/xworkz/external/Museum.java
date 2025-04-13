@@ -25,4 +25,17 @@ public class Museum extends Building {
         System.out.println(" code :"+super.hashCode());
         return 951;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Museum){
+                Museum museum=this;
+                Museum museum1=(Museum) obj;
+                if (museum1.name.equals(museum.name) && museum1.location.equals(museum.location) && museum1.noOfRooms==museum.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

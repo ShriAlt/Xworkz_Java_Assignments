@@ -26,4 +26,18 @@ public class Electronics extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 794613794;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Electronics){
+                Electronics electronics=this;
+                Electronics electronics1=(Electronics) obj;
+                if (electronics1.name.equals(electronics.name) && electronics1.expireDate==electronics.expireDate && electronics1.quantity==electronics.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

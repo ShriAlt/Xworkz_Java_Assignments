@@ -26,4 +26,18 @@ public class Sports extends ProductCategory {
         System.out.println(" code :"+super.hashCode());
         return 78964;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof Sports){
+                Sports sports=this;
+                Sports sports1=(Sports) obj;
+                if (sports1.name.equals(sports.name) && sports1.expireDate==sports.expireDate && sports1.quantity==sports.quantity){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

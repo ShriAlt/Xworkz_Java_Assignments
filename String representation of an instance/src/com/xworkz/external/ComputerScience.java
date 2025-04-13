@@ -25,4 +25,18 @@ public class ComputerScience extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 974613;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof ComputerScience){
+                ComputerScience computerScience=this;
+                ComputerScience computerScience1=(ComputerScience) obj;
+                if (computerScience1.name.equals(computerScience.name) && computerScience1.grade.equals(computerScience.grade) && computerScience1.score==computerScience.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

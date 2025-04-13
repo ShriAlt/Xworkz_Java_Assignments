@@ -25,4 +25,17 @@ public class Library extends Building {
         System.out.println(" code :"+super.hashCode());
         return 12546;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Library){
+                Library library=this;
+                Library library1=(Library) obj;
+                if (library1.name.equals(library.name) && library1.location.equals(library.location) && library.noOfRooms==library1.noOfRooms){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

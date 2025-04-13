@@ -25,4 +25,17 @@ public class IgniteMe extends Book {
         System.out.println(" code :"+super.hashCode());
         return 8752;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof IgniteMe){
+                IgniteMe igniteMe=this;
+                IgniteMe igniteMe1=(IgniteMe) obj;
+                if (igniteMe1.name.equals(igniteMe.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

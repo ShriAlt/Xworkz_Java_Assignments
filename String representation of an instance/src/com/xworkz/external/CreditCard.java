@@ -25,4 +25,18 @@ public class CreditCard extends PaymentMethods {
         System.out.println(" code :"+super.hashCode());
         return 8745;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof CreditCard){
+                CreditCard creditCard=this;
+                CreditCard creditCard1=(CreditCard) obj;
+                if (creditCard1.name.equals(creditCard.name) && creditCard1.cardNo==creditCard.cardNo && creditCard1.date==creditCard.date){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

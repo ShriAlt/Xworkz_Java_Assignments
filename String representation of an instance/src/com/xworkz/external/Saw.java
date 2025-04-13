@@ -25,4 +25,17 @@ public class Saw extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 14855;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Saw){
+                Saw saw=this;
+                Saw saw1=(Saw) obj;
+                if (saw1.name.equals(saw.name) && saw1.type.equals(saw.type) && saw1.quantity==saw.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

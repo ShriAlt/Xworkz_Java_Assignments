@@ -25,4 +25,17 @@ public class TwistedLove extends Book {
         System.out.println(" code :"+super.hashCode());
         return 1548;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof TwistedLove){
+                TwistedLove twistedLove=this;
+                TwistedLove twistedLove1=(TwistedLove) obj;
+                if (twistedLove1.name.equals(twistedLove.name) ){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

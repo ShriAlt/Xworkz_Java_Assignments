@@ -25,4 +25,18 @@ public class English extends Subject {
         System.out.println(" code :"+super.hashCode());
         return 85274;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj instanceof English){
+                English english=this;
+                English english1=(English) obj;
+                if (english1.name.equals(english.name) && english1.grade.equals(english.grade) && english1.score==english.score){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

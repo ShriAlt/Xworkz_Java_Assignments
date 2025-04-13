@@ -25,4 +25,17 @@ public class Wrench extends Tools {
         System.out.println(" code :"+super.hashCode());
         return 135985;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!= null){
+            if (obj instanceof Wrench){
+                Wrench wrench=this;
+                Wrench wrench1=(Wrench) obj;
+                if (wrench1.name.equals(wrench.name) && wrench1.type.equals(wrench.type) && wrench1.quantity==wrench.quantity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
