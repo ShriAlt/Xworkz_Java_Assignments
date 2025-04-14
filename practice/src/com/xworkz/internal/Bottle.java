@@ -7,8 +7,8 @@ public class Bottle extends Bag {
 
     }
 
-    @Override
-    public void displayBag() {
-        System.out.println("overridden method");
-    }
+//    @Override    //can not override the final methods
+//    public void  displayBag() {
+//        System.out.println("overridden method");
+//    }
 }
