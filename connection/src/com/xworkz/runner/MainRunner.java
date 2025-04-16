@@ -108,7 +108,13 @@ public class MainRunner {
         Bicycle bicycle = new BicycleImpl();
         bicycle.brake();
         Scooter scooter = new ScooterImpl();
+        scooter.kickStart();
+        scooter.park();
+        scooter.ride();
         Drill drill = new DrillImpl();
+        drill.startDrill();
+        drill.stopDrill();
+        drill.changeBit();
         Hammer hammer = new HammerImpl();
         Keyboard keyboard = new KeyboardImpl();
         Mouse mouse = new MouseImpl();
