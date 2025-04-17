@@ -5,6 +5,10 @@ public class BotBacWinDooBicDevice implements Bottle, Backpack, Window, Door, Bi
     public void pourWater() {}
     public void closeCap() {}
     public void zipOpen() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void storeItem() {}
     public void zipClose() {}
     public void openWindow() {}

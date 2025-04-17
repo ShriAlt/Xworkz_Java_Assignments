@@ -4,4 +4,5 @@ public interface Door {
     void unlock();
     void openDoor();
     void closeDoor();
+    default void rule(){}
 }

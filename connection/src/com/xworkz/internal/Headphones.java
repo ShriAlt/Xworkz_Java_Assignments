@@ -4,4 +4,5 @@ public interface Headphones {
     void connectBluetooth();
     void increaseVolume();
     void decreaseVolume();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Towel {
     void wipe();
     void dry();
     void fold();
+    default void rule(){}
 }

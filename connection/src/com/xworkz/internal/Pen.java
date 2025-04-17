@@ -4,4 +4,5 @@ public interface Pen {
     void write();
     void draw();
     void refill();
+    default void rule(){}
 }

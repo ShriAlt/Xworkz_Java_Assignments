@@ -5,6 +5,10 @@ public class MugBotBacWinDooDevice implements Mug, Bottle, Backpack, Window, Doo
     public void sip() {}
     public void clean() {}
     public void openCap() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void pourWater() {}
     public void closeCap() {}
     public void zipOpen() {}

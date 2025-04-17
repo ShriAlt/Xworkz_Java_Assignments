@@ -4,6 +4,10 @@ public class PriRouRefSpeProDevice implements Printer, Router, Refrigerator, Spe
     public void printDocument() {}
     public void scanDocument() {}
     public void cancelJob() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void connectInternet() {}
     public void resetRouter() {}
     public void checkSignal() {}

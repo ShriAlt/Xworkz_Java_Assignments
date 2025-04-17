@@ -4,4 +4,5 @@ public interface Backpack {
     void zipOpen();
     void storeItem();
     void zipClose();
+    default void rule(){}
 }

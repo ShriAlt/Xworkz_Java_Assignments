@@ -4,4 +4,5 @@ public interface Bowl {
     void fillSoup();
     void eat();
     void cleanBowl();
+    default void rule(){}
 }

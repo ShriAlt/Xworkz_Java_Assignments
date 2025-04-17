@@ -1,9 +1,9 @@
 package com.xworkz.internal;
 
-public class Bottle extends Bag {
+public class Bottle  {
     protected void display(){
-        super.displayBag();
-        this.displayBag();
+//        super.displayBag();
+//        this.displayBag();
 
     }
 

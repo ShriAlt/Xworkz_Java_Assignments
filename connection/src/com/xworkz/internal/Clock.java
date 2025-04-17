@@ -4,4 +4,5 @@ public interface Clock {
     void setTime();
     void alarmRing();
     void showTime();
+    default void rule(){}
 }

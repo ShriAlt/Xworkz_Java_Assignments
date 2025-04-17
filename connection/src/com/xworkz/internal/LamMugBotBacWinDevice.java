@@ -5,6 +5,10 @@ public class LamMugBotBacWinDevice implements Lamp, Mug, Bottle, Backpack, Windo
     public void switchOff() {}
     public void dimLight() {}
     public void fill() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void sip() {}
     public void clean() {}
     public void openCap() {}

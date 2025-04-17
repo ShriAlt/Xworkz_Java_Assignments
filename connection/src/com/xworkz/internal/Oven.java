@@ -4,4 +4,5 @@ public interface Oven {
     void preheat();
     void bake();
     void shutDown();
+    default void rule(){}
 }

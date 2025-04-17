@@ -4,6 +4,10 @@ public class FanOveLapPhoCarDevice implements Fan, Oven, Laptop, Phone, Car {
     public void turnOn() {}
     public void turnOff() {}
     public void changeSpeed() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void preheat() {}
     public void bake() {}
     public void shutDown() {}

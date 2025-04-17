@@ -16,4 +16,8 @@ public class WatTelMicPriRouDevice implements Watch, Television, Microwave, Prin
     public void connectInternet() {}
     public void resetRouter() {}
     public void checkSignal() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
 }

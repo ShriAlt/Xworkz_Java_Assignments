@@ -4,4 +4,5 @@ public interface Tablet {
     void openApp();
     void rotateScreen();
     void lockDevice();
+    default void rule(){}
 }

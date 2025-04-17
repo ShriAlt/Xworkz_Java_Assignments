@@ -4,4 +4,5 @@ public interface Calculator {
     void add();
     void subtract();
     void multiply();
+    default void rule(){}
 }

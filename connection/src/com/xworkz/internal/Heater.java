@@ -4,4 +4,5 @@ public interface Heater {
     void turnOn();
     void setTimer();
     void turnOff();
+    default void rule(){}
 }

@@ -6,5 +6,9 @@ public class RefrigeratorSpeakerDevice implements Refrigerator, Speaker {
     public void setTemperature() {}
     public void playMusic() {}
     public void pauseMusic() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void adjustVolume() {}
 }

@@ -4,4 +4,5 @@ public interface Watch {
     void showTime();
     void setAlarm();
     void startTimer();
+    default void rule(){}
 }

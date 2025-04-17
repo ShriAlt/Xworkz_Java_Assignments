@@ -4,4 +4,5 @@ public interface Refrigerator {
     void coolItems();
     void defrost();
     void setTemperature();
+    default void rule(){}
 }

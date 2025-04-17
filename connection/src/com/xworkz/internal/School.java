@@ -5,6 +5,10 @@ public class School implements Backpack, Window, Door, Bicycle, Scooter {
     public void storeItem() {System.out.println("running method");}
     public void zipClose() {System.out.println("running method");}
     public void openWindow() {System.out.println("running method");}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void closeWindow() {System.out.println("running method");}
     public void lockWindow() {System.out.println("running method");}
     public void unlock() {System.out.println("running method");}

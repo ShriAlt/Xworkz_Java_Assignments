@@ -4,4 +4,5 @@ public interface Laptop {
     void powerOn();
     void runProgram();
     void sleepMode();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Lamp {
     void switchOn();
     void switchOff();
     void dimLight();
+    default void rule(){}
 }

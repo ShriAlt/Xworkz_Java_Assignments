@@ -5,6 +5,10 @@ public class OveLapPhoCarCamDevice implements Oven, Laptop, Phone, Car, Camera {
     public void bake() {}
     public void shutDown() {}
     public void powerOn() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void runProgram() {}
     public void sleepMode() {}
     public void makeCall() {}

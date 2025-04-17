@@ -4,4 +4,5 @@ public interface VacuumCleaner {
     void startCleaning();
     void pauseCleaning();
     void emptyBin();
+    default void rule(){}
 }

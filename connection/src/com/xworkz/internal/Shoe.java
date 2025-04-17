@@ -4,4 +4,5 @@ public interface Shoe {
     void wear();
     void tieLaces();
     void remove();
+    default void rule(){}
 }

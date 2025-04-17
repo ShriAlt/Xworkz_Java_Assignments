@@ -4,4 +4,5 @@ public interface Desk {
     void openDrawer();
     void closeDrawer();
     void adjustHeight();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Brush {
     void brushTeeth();
     void rinse();
     void store();
+    default void rule(){}
 }

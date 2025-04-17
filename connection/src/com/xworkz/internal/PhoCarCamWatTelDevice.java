@@ -4,6 +4,10 @@ public class PhoCarCamWatTelDevice implements Phone, Car, Camera, Watch, Televis
     public void makeCall() {}
     public void sendText() {}
     public void takePhoto() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void startEngine() {}
     public void accelerate() {}
     public void brake() {}

@@ -4,4 +4,5 @@ public interface Speaker {
     void playMusic();
     void pauseMusic();
     void adjustVolume();
+    default void rule(){}
 }

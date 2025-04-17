@@ -5,6 +5,10 @@ public class ShoBooPenLamMugDevice implements Shoe, Book, Pen, Lamp, Mug {
     public void tieLaces() {}
     public void remove() {}
     public void open() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void read() {}
     public void bookmarkPage() {}
     public void write() {}

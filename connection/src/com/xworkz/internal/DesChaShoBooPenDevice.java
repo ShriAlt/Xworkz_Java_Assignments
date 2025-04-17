@@ -7,6 +7,12 @@ public class DesChaShoBooPenDevice implements Desk, Chair, Shoe, Book, Pen {
     public void sit() {}
     public void recline() {}
     public void roll() {}
+
+    @Override
+    public void rule() {
+        Chair.super.rule();
+    }
+
     public void wear() {}
     public void tieLaces() {}
     public void remove() {}
@@ -16,4 +22,5 @@ public class DesChaShoBooPenDevice implements Desk, Chair, Shoe, Book, Pen {
     public void write() {}
     public void draw() {}
     public void refill() {}
+
 }

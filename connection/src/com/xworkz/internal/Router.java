@@ -4,4 +4,5 @@ public interface Router {
     void connectInternet();
     void resetRouter();
     void checkSignal();
+    default void rule(){}
 }

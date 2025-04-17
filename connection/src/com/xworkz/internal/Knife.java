@@ -4,4 +4,5 @@ public interface Knife {
     void cut();
     void slice();
     void wash();
+    default void rule(){}
 }

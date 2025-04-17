@@ -4,4 +4,5 @@ public interface Rope {
     void tieKnot();
     void untie();
     void coil();
+    default void rule(){}
 }

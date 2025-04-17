@@ -4,4 +4,5 @@ public interface Camera {
     void capture();
     void zoomIn();
     void zoomOut();
+    default void rule(){}
 }

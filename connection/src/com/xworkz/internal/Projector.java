@@ -4,4 +4,5 @@ public interface Projector {
     void projectImage();
     void adjustFocus();
     void powerDown();
+    default void rule(){}
 }

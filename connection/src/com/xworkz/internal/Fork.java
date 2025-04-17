@@ -4,4 +4,5 @@ public interface Fork {
     void stabFood();
     void eat();
     void cleanFork();
+    default void rule(){}
 }

@@ -6,6 +6,10 @@ public class CamWatTelMicPriDevice implements Camera, Watch, Television, Microwa
     public void zoomOut() {}
     public void showTime() {}
     public void setAlarm() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void startTimer() {}
     public void switchChannel() {}
     public void increaseVolume() {}

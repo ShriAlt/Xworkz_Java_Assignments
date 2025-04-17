@@ -4,4 +4,5 @@ public interface Mug {
     void fill();
     void sip();
     void clean();
+    default void rule(){}
 }

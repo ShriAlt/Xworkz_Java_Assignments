@@ -4,4 +4,5 @@ public interface Monitor {
     void turnOn();
     void adjustBrightness();
     void turnOff();
+    default void rule(){}
 }

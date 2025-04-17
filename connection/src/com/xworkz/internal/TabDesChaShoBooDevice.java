@@ -3,6 +3,10 @@ package com.xworkz.internal;
 public class TabDesChaShoBooDevice implements Tablet, Desk, Chair, Shoe, Book {
     public void openApp() {}
     public void rotateScreen() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void lockDevice() {}
     public void openDrawer() {}
     public void closeDrawer() {}

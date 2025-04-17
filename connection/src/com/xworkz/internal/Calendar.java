@@ -4,4 +4,5 @@ public interface Calendar {
     void markDate();
     void flipPage();
     void removeNote();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Fridge {
     void openFridge();
     void storeFood();
     void closeFridge();
+    default void rule(){}
 }

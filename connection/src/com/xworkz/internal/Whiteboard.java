@@ -4,4 +4,5 @@ public interface Whiteboard {
     void writeText();
     void eraseText();
     void cleanBoard();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Plate {
     void serveFood();
     void wash();
     void dryPlate();
+    default void rule(){}
 }

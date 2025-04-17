@@ -4,4 +4,5 @@ public interface Phone {
     void makeCall();
     void sendText();
     void takePhoto();
+    default void rule(){}
 }

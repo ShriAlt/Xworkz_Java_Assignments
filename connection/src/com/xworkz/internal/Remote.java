@@ -4,4 +4,5 @@ public interface Remote {
     void pressButton();
     void changeBattery();
     void signalTV();
+    default void rule(){}
 }

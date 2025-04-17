@@ -4,4 +4,5 @@ public interface Broom {
     void sweep();
     void shakeOff();
     void store();
+    default void rule(){}
 }

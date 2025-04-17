@@ -4,4 +4,5 @@ public interface Blender {
     void blend();
     void stop();
     void clean();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Drill {
     void startDrill();
     void stopDrill();
     void changeBit();
+    default void rule(){}
 }

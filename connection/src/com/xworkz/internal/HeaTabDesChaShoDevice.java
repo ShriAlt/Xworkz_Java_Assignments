@@ -5,6 +5,10 @@ public class HeaTabDesChaShoDevice implements Headphones, Tablet, Desk, Chair, S
     public void increaseVolume() {}
     public void decreaseVolume() {}
     public void openApp() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void rotateScreen() {}
     public void lockDevice() {}
     public void openDrawer() {}

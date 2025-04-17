@@ -4,4 +4,5 @@ public interface Dishwasher {
     void loadDishes();
     void startWash();
     void dryDishes();
+    default void rule(){}
 }

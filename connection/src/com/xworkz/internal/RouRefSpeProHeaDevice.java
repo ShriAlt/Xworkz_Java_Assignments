@@ -3,6 +3,10 @@ package com.xworkz.internal;
 public class RouRefSpeProHeaDevice implements Router, Refrigerator, Speaker, Projector, Headphones {
     public void connectInternet() {}
     public void resetRouter() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void checkSignal() {}
     public void coolItems() {}
     public void defrost() {}

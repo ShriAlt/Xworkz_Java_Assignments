@@ -4,4 +4,5 @@ public interface Blanket {
     void coverUp();
     void fold();
     void store();
+    default void rule(){}
 }

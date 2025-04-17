@@ -4,4 +4,5 @@ public interface Globe {
     void spin();
     void locateCountry();
     void stopSpin();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Window {
     void openWindow();
     void closeWindow();
     void lockWindow();
+    default void rule(){}
 }

@@ -4,4 +4,8 @@ public class MixerImpl implements Mixer {
     public void addIngredients() {}
     public void startMixing() {}
     public void stopMixing() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
 }

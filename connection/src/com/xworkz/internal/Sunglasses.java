@@ -4,4 +4,5 @@ public interface Sunglasses {
     void wear();
     void remove();
     void clean();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Bottle {
     void openCap();
     void pourWater();
     void closeCap();
+    default void rule(){}
 }

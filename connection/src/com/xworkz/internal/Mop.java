@@ -4,4 +4,5 @@ public interface Mop {
     void dipInWater();
     void mopFloor();
     void rinse();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Television {
     void switchChannel();
     void increaseVolume();
     void powerOff();
+    default void rule(){}
 }

@@ -4,4 +4,8 @@ public interface Chair {
     void sit();
     void recline();
     void roll();
+
+    default void rule(){}
+
+
 }

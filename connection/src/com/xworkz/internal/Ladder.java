@@ -4,4 +4,5 @@ public interface Ladder {
     void climb();
     void fold();
     void store();
+    default void rule(){}
 }

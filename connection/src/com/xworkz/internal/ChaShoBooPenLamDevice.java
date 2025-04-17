@@ -5,6 +5,10 @@ public class ChaShoBooPenLamDevice implements Chair, Shoe, Book, Pen, Lamp {
     public void recline() {}
     public void roll() {}
     public void wear() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void tieLaces() {}
     public void remove() {}
     public void open() {}

@@ -4,4 +4,5 @@ public interface Hammer {
     void swing();
     void hitNail();
     void removeNail();
+    default void rule(){}
 }

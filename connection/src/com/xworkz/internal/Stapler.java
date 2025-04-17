@@ -4,4 +4,5 @@ public interface Stapler {
     void insertStaple();
     void staplePaper();
     void refillStaples();
+    default void rule(){}
 }

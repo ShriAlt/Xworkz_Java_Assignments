@@ -4,4 +4,5 @@ public interface WashingMachine {
     void startCycle();
     void stopCycle();
     void drainWater();
+    default void rule(){}
 }

@@ -4,4 +4,5 @@ public interface Microwave {
     void startHeating();
     void stopHeating();
     void setTimer();
+    default void rule(){}
 }

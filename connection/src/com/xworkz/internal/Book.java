@@ -4,4 +4,5 @@ public interface Book {
     void open();
     void read();
     void bookmarkPage();
+    default void rule(){}
 }

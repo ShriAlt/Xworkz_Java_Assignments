@@ -5,6 +5,10 @@ public class RefSpeProHeaTabDevice implements Refrigerator, Speaker, Projector, 
     public void defrost() {}
     public void setTemperature() {}
     public void playMusic() {}
+    @Override
+    public void rule() {
+        System.out.println("runing the default methods");
+    }
     public void pauseMusic() {}
     public void adjustVolume() {}
     public void projectImage() {}
