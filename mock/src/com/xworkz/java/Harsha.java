@@ -11,7 +11,7 @@ public class Harsha {
                 if ( n>=70 && n <=100){
                     result ++;
                 }
-//            else System.out.println("no numbers");
+//            else System.out.println("no numbers");;;;
 
         }
 

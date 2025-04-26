@@ -11,7 +11,7 @@ public class Car extends Vehical {
     public Car(String color,int wheels,int price){
         this.color=color;
         this.price=price;
-        this.wheels=wheels;
+        this.wheels=wheels;;;;
     }
 
     @Override
