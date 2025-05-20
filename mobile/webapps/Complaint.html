@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Complaint Form</title>
+  <meta charset="UTF-8">
+  <title>Complaint Form</title>
+  <style>
+    .complaintForm {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 500px;
+      margin: auto;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Complaint form</h1>
-<form action="complaint" method="post">
-  <label for="personName">Name :</label>
-  <input type="text" name="personName"/>
-  <br><br>
-  <label for="age"> Age :</label>
-  <input type="text" name="age"/>
-  <label for="gender">Gender</label>
-  <label for="male">Male</label>
-  <input type="checkbox" name="male"/>
-  <label for="female"> Female</label>
-  <input type="checkbox" name="femlae" />
-  <label for="other">Other</label>
-  <input type="checkbox" name="other"/>
-  <br><br>
-  <label for="address">Address :</label>
-  <input type="text" name="address"/>
-  <br><br>
-  <label for="complaint">Complaint :</label>
-  <textarea name="complaint" rows="10" cols="30"></textarea>
-  <br><br>
-  <label for="whom">Against Whom :</label>
-  <input type="text" name="whom"/>
-  <br><br>
-  <input type="submit" value="Submit"/>
-
-
-
-
-
-
-
-
-</form>
+  <h1>Complaint form</h1>
+  <form action="complaint" method="post" class="complaintForm">
+    <label for="personName">Name :</label>
+    <input type="text" name="personName" id="personName" />
+    <br><br>
+    <label for="age"> Age :</label>
+    <input type="number" id="age" name="age" />
+    <br><br>
+    <label >Gender</label> <br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" /><br>
+    <label for="female"> Female</label>
+    <input type="radio" id="female" name="gender" /><br>
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" />
+    <br><br>
+    <label for="address">Address :</label>
+    <input type="text" id="address" name="address" />
+    <br><br>
+    <label for="complaint">Complaint :</label><br>
+    <textarea name="complaint" id="complaint" rows="10" cols="30"></textarea>
+    <br><br>
+    <label for="whom">Against Whom :</label>
+    <input type="text" id="whom" name="whom" />
+    <br><br>
+    <input type="submit" value="Submit" />
+  </form>
 
 </body>
+
 </html>
